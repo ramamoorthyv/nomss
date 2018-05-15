@@ -1,9 +1,8 @@
 module Api
   module V1
  	class WarehouseController < ApplicationController
-
  		def fulfilment
- 			render :json => [1,2]
+ 			render :json => ApplicationRecord.products
  		end 
 	end
  end
