@@ -33,7 +33,7 @@ rails s
 
 ```
 
-### Unfilled API
+### Order API
 #### End point  
  Local : http://localhost:3000/api/v1/order/1 
   or temp server 
@@ -67,7 +67,7 @@ rails s
 
 
 
-### Unfilled API
+### Product API
 #### End point  
  Local : http://localhost:3000/api/v1/product/1
   or temp server 
