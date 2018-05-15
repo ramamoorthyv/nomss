@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 	namespace :api do
 	  namespace :v1 do
 	    post 'warehouse/fulfilment'
+	    get 'order/:orderId' => "warehouse#order",:as => 'order'
+	    get 'product/:productId' => "warehouse#product" 
 	  end
 	end
 end

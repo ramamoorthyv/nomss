@@ -131,11 +131,11 @@ class ApplicationRecord < ActiveRecord::Base
   end 
 
   def self.find_order(orderId)
-  	self.orders.select{|key, hash| key[:orderId] == orderId }
+  	self.orders.select{|key, hash| key[:orderId] == orderId }.first
   end 
 
   def self.find_product(productId)
-  	self.products.select{|key, hash| hash[:productId] == productId }
+  	self.products.select{|key, hash| key[:productId] == productId }.first
   end 
 
 end
