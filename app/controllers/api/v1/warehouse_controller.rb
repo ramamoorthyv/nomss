@@ -13,8 +13,7 @@ module Api
  			end  			
  		end
 
- 		def order
- 			
+ 		def order 			
  			order = ApplicationRecord.find_order(params[:orderId].to_i) 			
  			render :json => { :order => order }
  		end 
